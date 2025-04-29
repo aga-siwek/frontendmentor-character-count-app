@@ -30,11 +30,11 @@ function Result({message, excludeChecked, limitChecked, characterLimit}) {
 
 
         countCharacter = charactersToCount.length
-        wordsToCount = wordsToCount.split(" ")
-        countWord = wordsToCount.length
+        countWord = wordsToCount.split(" ").filter((sentence) => sentence !== "").length
 
         if (sentencesToCount.includes(".")){
-            countSentence =  sentencesToCount.split(".").length
+            console.log(sentencesToCount.split("."))
+            countSentence =  sentencesToCount.split(".").filter((sentence) => sentence !== "").length
         }
         else {
             countSentence = 1
