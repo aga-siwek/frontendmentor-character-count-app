@@ -6,11 +6,9 @@ import {ReactSVG} from "react-svg";
 function ModeSwitch() {
     return (
         <div className={styles.switch}>
-            <ReactSVG src={moonIcon} className={styles.moon} />
-            <ReactSVG src={sunIcon} className={styles.sun} />
-    </div>)
+            <ReactSVG src={moonIcon} className={styles.moon}/>
+            <ReactSVG src={sunIcon} className={styles.sun}/>
+        </div>)
 }
-
-
 
 export default ModeSwitch

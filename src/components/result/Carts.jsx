@@ -1,14 +1,15 @@
 import Cart from "./Cart.jsx";
 import styles from "./Carts.module.css"
 
-function Carts({characters, words, sentences}) {
+function Carts({characters, words, sentences, excludeChecked}) {
     return (
         <div className={styles.carts}>
-            <p>carts</p>
-            <p>{characters}</p>
-            <p>{words}</p>
-            <p>{sentences}</p>
-    </div>)
+            <Cart kind = "characters"
+                excludeChecked={excludeChecked}
+                count={characters}/>
+            <Cart kind = "words" count={words}/>
+            <Cart kind = "sentences"  count={sentences}/>
+        </div>)
 }
 
 export default Carts
