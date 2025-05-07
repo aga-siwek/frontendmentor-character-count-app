@@ -14,6 +14,7 @@
     height: 17px;
 }
 
+
 @media (min-width: 768px) {
     .switch__icon {
         width: 20px;

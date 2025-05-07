@@ -1,5 +1,5 @@
 .result {
     display: flex;
     flex-direction: column;
-    gap: calc(24rem/16);
+    gap: calc(24rem / 16);
 }

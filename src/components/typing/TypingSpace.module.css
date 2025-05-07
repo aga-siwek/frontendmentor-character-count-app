@@ -1,6 +1,6 @@
 .typing_space {
     width: 100%;
-    height: calc(200rem/16);
+    height: calc(200rem / 16);
     background-color: var(--input-background);
     border: 2px solid var(--input-border_color);
     border-radius: 12px;
@@ -8,16 +8,11 @@
     padding-top: 16px;
     padding-left: 16px;
     padding-right: 16px;
-    font-size: calc(18rem/16);
+    font-size: calc(18rem / 16);
 
 }
 
 .error {
     border: 2px solid var(--color-11);
-    box-shadow: 1px 1px 6px 0px  var(--color-11);
-}
-
-
-@media (min-width: 768px) {
-
+    box-shadow: 1px 1px 6px 0px var(--color-11);
 }

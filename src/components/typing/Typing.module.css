@@ -3,6 +3,5 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    gap: calc(16rem/16);
-
+    gap: calc(16rem / 16);
 }

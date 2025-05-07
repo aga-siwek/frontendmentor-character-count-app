@@ -7,16 +7,17 @@
 }
 
 .title__content {
-    font-size: calc(38rem/16);
+    font-size: calc(38rem / 16);
     font-weight: bold;
     text-align: center;
     letter-spacing: -1px;
     width: 100%;
 }
 
+
 @media (min-width: 768px) {
     .title__content {
-        font-size: calc(64rem/16);
+        font-size: calc(64rem / 16);
     }
 }
 

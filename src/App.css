@@ -32,10 +32,9 @@
 .container {
     display: flex;
     flex-direction: column;
-    gap: calc(40rem/16);
+    gap: calc(40rem / 16);
     margin: 16px;
     margin-bottom: 64px;
-
 }
 
 @media (min-width: 1100px) {

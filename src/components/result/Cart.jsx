@@ -23,15 +23,12 @@ function Cart(props) {
         if (props.kind === "sentences") {
             return <p className={styles.cart_text}>Total Sentences</p>
         }
-
     }
     return (
         <div className={`${styles.cart} ${styles[props.kind]}`}>
             {formatNumber()}
             {kindOfCount()}
-
         </div>)
-
 }
 
 export default Cart

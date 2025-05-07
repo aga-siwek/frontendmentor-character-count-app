@@ -10,11 +10,11 @@ function ModeSwitch({handleSwitch, isDark}) {
                 <ReactSVG
                     src={sunIcon}
                     className={styles.switch__icon}
-                    onClick={handleSwitch} /> :
+                    onClick={handleSwitch}/> :
                 <ReactSVG
                     src={moonIcon}
                     className={styles.switch__icon}
-                    onClick={handleSwitch} /> }
+                    onClick={handleSwitch}/>}
         </div>)
 }
 

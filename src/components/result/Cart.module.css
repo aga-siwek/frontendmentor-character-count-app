@@ -1,51 +1,52 @@
 .cart {
     display: flex;
     flex-direction: column;
-    gap: calc(8rem/16);
+    gap: calc(8rem / 16);
     width: 100%;
     justify-content: start;
     width: 100%;
     background-position: right center;
     background-repeat: no-repeat;
-    background-size: calc(150rem/16) auto;
+    background-size: calc(150rem / 16) auto;
     padding: 27px 20px;
     border-radius: 12px;
-    max-height: calc(150rem/16);
-    
+    max-height: calc(150rem / 16);
 }
 
 .characters {
-    background-color: var( --color-8);
+    background-color: var(--color-8);
     background-image: url("../../assets/pattern-character-count.svg");
 }
 
 .words {
-    background-color: var(  --color-10);
+    background-color: var(--color-10);
     background-image: url("../../assets/pattern-word-count.svg");
 }
 
 .sentences {
-    background-color: var(  --color-11);
+    background-color: var(--color-11);
     background-image: url("../../assets/pattern-sentence-count.svg");
 }
 
 .cart_counter {
     color: var(--color-1);
-    font-size: calc(40rem/16);
+    font-size: calc(40rem / 16);
     font-weight: bold;
 }
 
 .cart_text {
-    font-size: calc(20rem/16);
+    font-size: calc(20rem / 16);
     color: var(--color-1);
 }
 
+
 @media (min-width: 768px) {
     .cart {
-       max-width: 320px;
+        max-width: 320px;
     }
+
     .cart_counter {
-        font-size: calc(64rem/16);
+        font-size: calc(64rem / 16);
     }
 }
 

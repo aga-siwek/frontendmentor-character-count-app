@@ -21,40 +21,41 @@ function App() {
 
     const setNewText = useCallback((newMessage) => {
         setMessage(newMessage)
-    }, );
+    },);
     const handleCheckExclude = useCallback(() => {
         setExcludeChecked(!excludeChecked)
     }, [excludeChecked]);
 
-    const handleCheckLimit = useCallback( () => {
+    const handleCheckLimit = useCallback(() => {
         setLimitChecked(!limitChecked)
-    }, [limitChecked] )
+    }, [limitChecked])
 
-    const changeCharacterLimit = useCallback( (newLimit) => {
+    const changeCharacterLimit = useCallback((newLimit) => {
         setCharacterLimit(newLimit)
     }, [])
 
-    const handleSwitch = useCallback (() => {
+    const handleSwitch = useCallback(() => {
         setIsDark(!isDark)
-    }, [isDark] )
+    }, [isDark])
 
-    const showErrorMessage = useCallback ( () => {
+    const showErrorMessage = useCallback(() => {
         if (limitChecked && characterLimit) {
             if (characterLimit < message.length) {
                 setIsError(true)
-                return <ErrorMessage characterLimit={characterLimit} />
+                return <ErrorMessage characterLimit={characterLimit}/>
+            } else {
+                setIsError(false)
             }
-            else {setIsError(false)}
-        }
-        else {
+        } else {
             setIsError(false)
         }
     })
 
+
     return (
         <>
             <div className='container'>
-                <MemoHeader isDark = {isDark} handleSwitch={handleSwitch}/>
+                <MemoHeader isDark={isDark} handleSwitch={handleSwitch}/>
                 <MemoTitle/>
                 <Typing
                     message={message}
@@ -65,8 +66,8 @@ function App() {
                     limitChecked={limitChecked}
                     characterLimit={characterLimit}
                     changeCharacterLimit={changeCharacterLimit}
-                    showErrorMessage = {showErrorMessage}
-                    isError = {isError}
+                    showErrorMessage={showErrorMessage}
+                    isError={isError}
                 />
                 <MemoResult
                     message={message}

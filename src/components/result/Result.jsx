@@ -15,14 +15,15 @@ function Result({message, excludeChecked, limitChecked, characterLimit}) {
         return wordsToCount.split(" ").filter((sentence) => sentence !== "").length
     }
     const countSentences = () => {
-        if (!sentencesToCount) {return 0}
+        if (!sentencesToCount) {
+            return 0
+        }
         if (sentencesToCount.includes(".")) {
             return sentencesToCount.split(".").filter((sentence) => sentence !== "").length
         } else {
             return 1
         }
     }
-
 
     if (message.length > 0) {
 // carts
@@ -33,12 +34,10 @@ function Result({message, excludeChecked, limitChecked, characterLimit}) {
                 sentencesToCount = sentencesToCount.slice(0, characterLimit)
             }
         }
-
         if (excludeChecked) {
             charactersToCount = charactersToCount.split(" ")
             charactersToCount = charactersToCount.join("")
         }
-
 // chart
         const letterCount = {}
         const matches = sentencesToCount.match(/[a-zA-Z]/g);
@@ -51,6 +50,7 @@ function Result({message, excludeChecked, limitChecked, characterLimit}) {
             Object.entries(letterCount).sort(([, a], [, b]) => b - a))
     }
 
+
     return (
         <div className={styles.result}>
             <Carts
@@ -60,7 +60,6 @@ function Result({message, excludeChecked, limitChecked, characterLimit}) {
                 excludeChecked={excludeChecked}/>
             <Chart letterCountSorted={letterCountSorted}/>
         </div>)
-
 }
 
 export default Result
