@@ -8,7 +8,7 @@
 
 .title__content {
     font-size: calc(38rem / 16);
-    font-weight: bold;
+    font-weight: bolder;
     text-align: center;
     letter-spacing: -1px;
     width: 100%;
