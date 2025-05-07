@@ -54,7 +54,7 @@ function App() {
 
     return (
         <>
-            <div className='container'>
+            <main className='container'>
                 <MemoHeader isDark={isDark} handleSwitch={handleSwitch}/>
                 <MemoTitle/>
                 <Typing
@@ -75,7 +75,7 @@ function App() {
                     limitChecked={limitChecked}
                     characterLimit={characterLimit}
                 />
-            </div>
+            </main>
         </>
     )
 }

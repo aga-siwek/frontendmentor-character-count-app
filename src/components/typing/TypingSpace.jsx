@@ -23,7 +23,6 @@ function TypingSpace({message, setNewText, isError}) {
         <textarea
             className={styles.typing_space}
             name="TypingSpace"
-            type="textarea"
             id="typeArea"
             value={message}
             onChange={hanleChange}/>)

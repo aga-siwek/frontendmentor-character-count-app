@@ -52,14 +52,14 @@ function Result({message, excludeChecked, limitChecked, characterLimit}) {
 
 
     return (
-        <div className={styles.result}>
+        <section className={styles.result}>
             <Carts
                 characters={countCharacters()}
                 words={countWords()}
                 sentences={countSentences()}
                 excludeChecked={excludeChecked}/>
             <Chart letterCountSorted={letterCountSorted}/>
-        </div>)
+        </section>)
 }
 
 export default Result

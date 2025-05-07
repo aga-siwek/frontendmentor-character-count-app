@@ -21,7 +21,7 @@ function Typing({
                 }) {
 
     return (
-        <div className={styles.typing} id="typingSpace">
+        <section className={styles.typing} id="typingSpace">
             <TypingSpace message={message} setNewText={setNewText} isError={isError}/>
             {showErrorMessage()}
             <MemoSelectSpace
@@ -32,7 +32,7 @@ function Typing({
                 characterLimit={characterLimit}
                 changeCharacterLimit={changeCharacterLimit}
             />
-        </div>)
+        </section>)
 }
 
 export default Typing
