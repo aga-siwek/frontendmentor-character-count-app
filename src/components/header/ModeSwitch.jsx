@@ -3,11 +3,18 @@ import moonIcon from '../../assets/icon-moon.svg'
 import sunIcon from '../../assets/icon-sun.svg'
 import {ReactSVG} from "react-svg";
 
-function ModeSwitch() {
+function ModeSwitch({handleSwitch, isDark}) {
     return (
         <div className={styles.switch}>
-            <ReactSVG src={moonIcon} className={styles.moon}/>
-            <ReactSVG src={sunIcon} className={styles.sun}/>
+            {isDark ?
+                <ReactSVG
+                    src={sunIcon}
+                    className={styles.switch__icon}
+                    onClick={handleSwitch} /> :
+                <ReactSVG
+                    src={moonIcon}
+                    className={styles.switch__icon}
+                    onClick={handleSwitch} /> }
         </div>)
 }
 

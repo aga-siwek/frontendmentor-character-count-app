@@ -3,13 +3,24 @@
   --font-color-1: hsl(240, 24%, 96%);
   --font-color-2: hsl(240, 26%, 92%);
   --font-color-3: hsl(233, 18%, 9%);
+  --input-background: hsl(235, 13%, 19%);
+  --input-border_color: hsl(235, 14%, 15%);
+  --input-font-color: hsl(240, 26%, 92%);
+  --switch-bacground-color: hsl(235, 13%, 19%);
+  --chart-progress-color: hsl(235, 14%, 15%);
+
 }
 
-root.light {
+:root.light {
   --main-background-color: hsl(0, 0%, 100%);
   --font-color-1: hsl(233, 18%, 9%);
   --font-color-2: hsl(235, 13%, 19%);
   --font-color-3: hsl(233, 18%, 9%);
+  --input-background: hsl(240, 24%, 96%);
+  --input-border_color: hsl(240, 26%, 92%);
+  --input-font-color: hsl(235, 13%, 19%);
+  --switch-bacground-color: hsl(240, 24%, 96%);
+  --chart-progress-color: hsl(240, 24%, 96%);
 }
 
 body {
@@ -21,3 +32,4 @@ body {
   font-style: normal;
   color: var(--font-color-1);
 }
+

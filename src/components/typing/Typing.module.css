@@ -1,0 +1,8 @@
+.typing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: calc(16rem/16);
+
+}

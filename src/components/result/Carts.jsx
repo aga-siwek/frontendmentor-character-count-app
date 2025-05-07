@@ -2,6 +2,7 @@ import Cart from "./Cart.jsx";
 import styles from "./Carts.module.css"
 
 function Carts({characters, words, sentences, excludeChecked}) {
+
     return (
         <div className={styles.carts}>
             <Cart kind = "characters"

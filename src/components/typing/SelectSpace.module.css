@@ -1,0 +1,85 @@
+.select_space {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: calc(12rem/16);
+}
+
+.chestbox_options {
+    display: flex;
+    flex-direction: column;
+    gap: calc(12rem/16);
+    width: 100%
+}
+
+.hidden_checkbox {
+    display: none;
+}
+
+.custom_label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.custom_check {
+    width: calc(16rem/16);
+    height: calc(16rem/16);
+    border: 1px solid var(--input-font-color);
+    border-radius: 4px;
+    background-color: transparent;
+    margin-right: 8px;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+
+/* Checkmark (✔) */
+.custom_check::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Gdy checkbox jest zaznaczony – targetujemy label + span */
+input[type="checkbox"]:checked + .custom_label .custom_check {
+    background-color: var(--color-9);
+    border-color: var(--color-9);
+}
+
+input[type="checkbox"]:checked + .custom_label .custom_check::after {
+    display: block;
+}
+
+.chestbox_option {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .select_space {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .chestbox_options {
+        flex-direction: row;
+        gap: calc(24rem/16);
+    }
+
+    .information {
+        width: 100%;
+        text-align: right;
+    }
+}

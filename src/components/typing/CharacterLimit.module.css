@@ -1,0 +1,7 @@
+.characterLimit__input {
+    width: 55px;
+    border: 2px solid var(--color-4);
+    border-radius: 6px;
+    background-color: transparent;
+    color: var(--input-font-color)
+}

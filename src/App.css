@@ -1,6 +1,43 @@
+:root {
+    /*Neutral 900*/
+    --color-1: hsl(233, 18%, 9%);
+    /*Neutral 800*/
+    --color-2: hsl(235, 14%, 15%);
+    /*Neutral 700*/
+    --color-3: hsl(235, 13%, 19%);
+    /*Neutral 600*/
+    --color-4: hsl(234, 14%, 29%);
+    /*Neutral 200*/
+    --color-5: hsl(240, 26%, 92%);
+    /*Neutral 100*/
+    --color-6: hsl(240, 24%, 96%);
+    /*Neutral 0*/
+    --color-7: hsl(0, 0%, 100%);
+    /*Blue 400*/
+    --color-8: hsl(274, 90%, 80%);
+    /*Blue 500*/
+    --color-9: hsl(274, 90%, 73%);
+    /*Yellow 500*/
+    --color-10: hsl(37, 100%, 50%);
+    /*Orange 500*/
+    --color-11: hsl(15, 99%, 67%);
+    /*Orange 800*/
+    --color-12: hsl(15, 99%, 43%);
+}
+
+.hidden {
+    display: none;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     gap: calc(40rem/16);
     margin: 16px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin: 16px 32px;
+    }
 }

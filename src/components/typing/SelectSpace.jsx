@@ -14,16 +14,22 @@ function SelectSpace({
             <div className={styles.chestbox_options}>
                 <div className={styles.chestbox_option}>
                     <input type="checkbox" id="exclude" name="exclude" value="exclude" onChange={handleCheckExclude}
-                           checked={excludeChecked}/>
-                    <label htmlFor="exclude"> Exclude Spaces</label>
+                           checked={excludeChecked}  className={styles.hidden_checkbox}/>
+                    <label htmlFor="exclude" className={styles.custom_label}>
+                        <span className={styles.custom_check}></span>
+                        Exclude Spaces</label>
                 </div>
                 <div className={styles.chestbox_option}>
+                    <div>
                     <input type="checkbox" id="character" name="character" value="character" onChange={handleCheckLimit}
-                           checked={limitChecked}/>
-                    <label htmlFor="character">Set Character Limit</label>
+                           checked={limitChecked}  className={styles.hidden_checkbox}/>
+                    <label htmlFor="character" className={styles.custom_label}>
+                        <span className={styles.custom_check}></span>
+                        Set Character Limit</label> </div>
+                    {limitChecked&&
                     <CharacterLimit
                         changeCharacterLimit={changeCharacterLimit}
-                        characterLimit={characterLimit}/>
+                        characterLimit={characterLimit}/>}
                 </div>
             </div>
             <p className={styles.information}>{'Approx.  reading time: <1 minute'}</p>

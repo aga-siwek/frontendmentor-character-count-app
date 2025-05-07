@@ -6,6 +6,7 @@ function CharacterLimit({changeCharacterLimit, characterLimit}) {
             <input
                 type="number"
                 value={characterLimit}
+                className={styles.characterLimit__input}
                 onChange={(e) => changeCharacterLimit(e.target.value)}/>
         </div>
     )

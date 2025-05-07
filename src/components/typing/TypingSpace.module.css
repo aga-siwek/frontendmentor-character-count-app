@@ -1,0 +1,24 @@
+.typing_space {
+    width: 100%;
+    height: calc(200rem/16);
+    background-color: var(--input-background);
+    border: 2px solid var(--input-border_color);
+    border-radius: 12px;
+    color: var(--input-font-color);
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+}
+
+.error {
+    border: 2px solid var(--color-11);
+    box-shadow: 1px 1px 6px 0px  var(--color-11);
+}
+
+
+@media (min-width: 768px) {
+    .typing_space {
+        font-size: calc(18rem/16);
+    }
+}

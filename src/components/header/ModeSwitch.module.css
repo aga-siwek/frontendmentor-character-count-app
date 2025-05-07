@@ -1,0 +1,15 @@
+.hidden {
+    display: none;
+}
+
+.switch {
+    background-color: var(--switch-bacground-color);
+    padding: 6px;
+    border-radius: 6px;
+    max-width: 44px;
+}
+
+.switch__icon {
+    width: 17px;
+    height: 17px;
+}
