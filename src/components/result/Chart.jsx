@@ -49,7 +49,7 @@ function Chart({letterCountSorted}) {
                 {availableCharts < Object.keys(letterCountSorted).length ?
                     <div className={styles.chart__container__see__more}>
                         <p onClick={handleShowMore} className={styles.chart__container__see__more__text}>
-                            <span>See more</span> <img src={arrowDown}/></p></div> : <p></p>}
+                            <span>See more</span> <img src={arrowDown} alt="arrow down"/></p></div> : <p></p>}
             </div>
         );
     } else {

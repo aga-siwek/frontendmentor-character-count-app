@@ -25,7 +25,8 @@ function TypingSpace({message, setNewText, isError}) {
             name="TypingSpace"
             id="typeArea"
             value={message}
-            onChange={hanleChange}/>)
+            onChange={hanleChange}
+            aria-label="You can Type your text here"/>)
 }
 
 export default TypingSpace
