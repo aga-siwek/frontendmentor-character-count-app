@@ -15,13 +15,13 @@ function Cart(props) {
 
     const kindOfCount = () => {
         if (props.kind === "characters") {
-            return <p className={styles.cart_text}>Total Characters {props.excludeChecked ? '(no space)' : ''} </p>
+            return <h3 className={styles.cart_text}>Total Characters {props.excludeChecked ? '(no space)' : ''} </h3>
         }
         if (props.kind === "words") {
-            return <p className={styles.cart_text}>Total Words</p>
+            return <h3 className={styles.cart_text}>Total Words</h3>
         }
         if (props.kind === "sentences") {
-            return <p className={styles.cart_text}>Total Sentences</p>
+            return <h3 className={styles.cart_text}>Total Sentences</h3>
         }
     }
     return (
