@@ -2,8 +2,6 @@ import Carts from "./Carts.jsx";
 import Chart from "./Chart.jsx";
 import styles from "./Result.module.css"
 
-
-
 function Result({message, excludeChecked, limitChecked, characterLimit}) {
     let charactersToCount = message
     let wordsToCount = message

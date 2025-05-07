@@ -12,6 +12,12 @@
     width: 100%
 }
 
+.chestbox_option{
+    display: flex;
+    flex-direction: row;
+    gap: calc(8rem/16);
+}
+
 .hidden_checkbox {
     display: none;
 }

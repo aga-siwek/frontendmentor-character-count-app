@@ -1,16 +1,27 @@
 .title {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: start;
-    justify-content: left;
+    justify-content: center;
+    width: 100%;
 }
 
 .title__content {
-    font-size: calc(40rem/16);
+    font-size: calc(38rem/16);
     font-weight: bold;
-    text-align: center}
+    text-align: center;
+    letter-spacing: -1px;
+    width: 100%;
+}
+
 @media (min-width: 768px) {
     .title__content {
         font-size: calc(64rem/16);
+    }
+}
+
+@media (min-width: 1100px) {
+    .title {
+        padding: 0 150px;
     }
 }

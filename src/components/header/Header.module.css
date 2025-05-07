@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
     max-height: 28px;
-    margin-bottom: calc(17rem/16);
+    margin-bottom: calc(16rem/16);
 }
 
 .logo_img{
@@ -18,5 +18,10 @@
 @media (min-width: 768px) {
     .navbar {
         max-height: 40px;
+    }
+
+    .logo_img{
+        height: 40px;
+        width: 245px;
     }
 }

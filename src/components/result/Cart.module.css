@@ -31,7 +31,7 @@
 
 .cart_counter {
     color: var(--color-1);
-    font-size: calc(64rem/16);
+    font-size: calc(40rem/16);
     font-weight: bold;
 }
 
@@ -42,7 +42,10 @@
 
 @media (min-width: 768px) {
     .cart {
-       max-width: 224px;
+       max-width: 320px;
+    }
+    .cart_counter {
+        font-size: calc(64rem/16);
     }
 }
 

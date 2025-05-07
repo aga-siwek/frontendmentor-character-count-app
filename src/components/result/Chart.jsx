@@ -53,6 +53,17 @@ function Chart({letterCountSorted}) {
             </div>
         );
     }
+    else {
+        return (
+            <div className={styles.chart__container}>
+                <h3 className={styles.chart__container__title}>Letter Density</h3>
+                <div className={styles.chart__components} >
+                    <p>No characters found. Start typing to see letter density.</p>
+                </div>
+            </div>
+        );
+    }
 }
+
 
 export default Chart

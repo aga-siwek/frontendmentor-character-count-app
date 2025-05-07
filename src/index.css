@@ -24,12 +24,18 @@
 }
 
 body {
-  margin: auto auto;
   background-color: var(--main-background-color);
   font-family: "Karla", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   color: var(--font-color-1);
+
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

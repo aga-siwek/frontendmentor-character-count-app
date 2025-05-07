@@ -9,7 +9,6 @@ import {useState, useCallback, memo} from "react";
 const MemoHeader = memo(Header)
 const MemoTitle = memo(Title)
 const MemoResult = memo(Result)
-const MemoTyping = memo(Typing)
 
 function App() {
     const [message, setMessage] = useState("")

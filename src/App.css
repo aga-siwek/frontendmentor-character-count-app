@@ -34,10 +34,14 @@
     flex-direction: column;
     gap: calc(40rem/16);
     margin: 16px;
+    margin-bottom: 64px;
+
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1100px) {
     .container {
-        margin: 16px 32px;
+        max-width: 990px;
     }
 }
+
+
